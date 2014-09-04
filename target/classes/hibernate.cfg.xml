@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	    <property name="show_sql">true</property>
+		<property name="format_sql">false</property> 
+		<property name="dialect">tang.li.inn.infrastructure.util.SQLiteDialect</property>
+		<property name="connection.driver_class">org.sqlite.JDBC</property>
+		<property name="connection.url">jdbc:sqlite:C:\Users\LiTang\Desktop\InnMIS BackUP\InnData.db</property>
+		<property name="connection.username"></property>
+		<property name="connection.password"></property>
+
+		<!-- <property name="hibernate.cache.use_second_level_cache">false</property>
+		<property name="hibernate.cache.use_query_cache">false</property>
+		<property name="hibernate.cache.use_minimal_puts">false</property>
+		<property name="hibernate.cache.use_structured_entries">false</property> -->
+		
+	<!-- <mapping resource="User.hbm.xml"/> -->
+	<!-- <mapping class="tang.li.inn.entity.manager.Manager" /> -->
+	<!-- <mapping package="tang.li.inn.entity.manager" /> --><!-- wrong !!! -->
+
+
+
+	<!-- mysql test -->
+
+	<!-- <property name="show_sql">false</property>
+	<property name="connection.url">
+		jdbc:mysql://localhost/test
+	</property>
+	<property name="connection.username">sa</property>
+	<property name="connection.password">sa</property>
+	<property name="connection.driver_class">
+		org.gjt.mm.mysql.Driver
+	</property>
+	<property name="dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property> -->
+
+
+
+</session-factory>
+</hibernate-configuration>

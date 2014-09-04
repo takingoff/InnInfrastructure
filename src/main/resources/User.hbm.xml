@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="tang.li.inn.entity.manager.Manager" table="manager">
+		<id column="id" name="id" type="string">
+			<generator class="native" />
+		</id>
+		<property column="name" generated="never" lazy="false" name="name"
+			type="string" />
+		<property column="password" generated="never" lazy="false"
+			name="password" type="string" />
+		<property column="level" generated="never" lazy="false"
+			name="level" type="int" />
+	</class>
+</hibernate-mapping>
